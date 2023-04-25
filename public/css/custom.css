@@ -1,0 +1,152 @@
+a{
+    text-decoration: none !important;
+}
+
+.dashboard-driver{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    row-gap: 2rem;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.card-driver{
+    background-color: #fff;
+    width: 7.5rem;
+    aspect-ratio: 1;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px gray;
+}
+
+.dashboard-driver a:hover,
+.dashboard-driver a:focus{
+    background-color: #0275D8;
+    color: #fff;
+}
+
+@media(min-width: 876px){
+    .fuel-cards{
+        display: flex;
+        gap: 1rem;
+    }
+}
+
+.center-vertical{
+    display: flex;
+    align-items: center;
+}
+
+.info{
+    padding-block: 0.5rem;
+    border-bottom: 1px solid #D9D9D9;
+}
+
+.info:last-child{
+    border-bottom: none;
+}
+
+.step-info{
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 2.5rem;
+    padding-block: .75rem;
+}
+
+.step-number{
+    width: 2.5rem;
+    aspect-ratio: 1;
+    border: 1px solid;
+    padding: .5rem;
+    border-radius: 50%;
+    font-size: 1.25rem;
+}
+
+.line{
+    height: 50px;
+    border-left: 1px solid #333;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.fa-check{
+    color: #5CB85C;
+}
+
+.fa-icons{
+    padding: 0.75rem;
+    border: 1px solid #EDF0F8;
+    background-color: #EDF0F8;
+    border-radius: 50%;
+    font-size: 1.25rem;
+}
+
+.dash-item{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.section-1{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 50%);
+    gap: 2rem;
+}
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+.between{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media(min-width: 700px){
+    .section-1{
+        display: flex; 
+        justify-content: space-around
+    }
+}
+
+@media(min-width: 770px){
+    .cards-supplier{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
+
+.progress-cards{
+    display: grid;
+    gap: 1rem;
+}
+
+@media(min-width: 800px){
+    .progress-cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.fuel-cards{
+    display: grid;
+    gap: 1rem;
+}
+
+@media(min-width: 815px){
+    .fuel-cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(min-width: 1200px){
+    .fuel-cards{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
